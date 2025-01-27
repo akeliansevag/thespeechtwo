@@ -14,7 +14,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary : '#F90542'
+        // primary : '#F90542'
+        primary : '#000000'
       },
       fontFamily: {
         english: ['Work Sans', 'sans-serif'], // Replace with your English font
