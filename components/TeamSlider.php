@@ -4,7 +4,7 @@ $query = new WP_Query([
 ]);
 $team = $query->posts;
 ?>
-<h2 class="section-title"><?= _e("THE TEAM", 'thespeech') ?></h2>
+<h2 class="section-title"><?= _e("The Team", 'thespeech') ?></h2>
 <div id="team-slider" class="team swiper mt-8">
     <div class="swiper-wrapper">
         <?php foreach ($team as $member): ?>

@@ -6,6 +6,10 @@
   @apply font-arabic leading-10;
   direction: rtl;
 }
+[lang="en-US"] {
+  @apply font-english;
+  direction: ltr;
+}
 
 :root {
   --header-height: 160px;
@@ -34,7 +38,7 @@ main {
   background-color: #dedede;
 }
 .hamburger {
-  @apply flex flex-col justify-center items-center gap-[3px] max-lg:h-full lg:h-[56px] w-[56px] lg:rounded-full bg-black;
+  @apply flex flex-col justify-center items-center gap-[3px] max-lg:h-full max-lg:w-[60px] lg:h-[40px] lg:w-[40px] lg:rounded-full bg-white;
 }
 
 .hamburger:hover {
@@ -42,23 +46,24 @@ main {
 }
 
 .hamburger span {
+  @apply bg-primary;
   height: 3px;
   width: 20px;
-  background-color: white;
 }
 
-.hamburger:hover span {
-  background-color: #000000;
+.hamburger:hover {
+  @apply hover:opacity-90;
 }
 
 .menu {
-  @apply text-black w-full flex justify-start gap-10;
+  @apply text-white w-full flex justify-start gap-10;
 }
 .menu > li {
-  @apply relative text-center border-l border-black pt-5 pl-2;
+  @apply relative text-center border-l border-white pt-5 pl-2;
 }
 
 .section-title {
+  @apply capitalize;
   font-weight: 700;
   font-size: 24px;
 }
@@ -228,16 +233,16 @@ body.open #side-menu-overlay {
 }
 
 .mobile-menu {
-  @apply border-t-2 border-black;
+  @apply border-t-2 border-white;
 }
 
 .mobile-menu li {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   padding: 10px 20px;
 }
 
 .mobile-menu li a {
-  @apply text-black text-3xl font-light hover:opacity-70;
+  @apply text-white text-3xl font-light hover:opacity-70;
 }
 
 .page-numbers {
@@ -271,15 +276,7 @@ a.page-numbers:hover svg path {
 }
 
 .wpml-ls-legacy-list-horizontal a {
-  @apply pr-[5px] pl-[5px] pt-[5px] pb-[6px] text-sm;
-}
-
-.wpml-ls-current-language {
-  @apply text-white;
-}
-
-.wpml-ls-item-ar a span {
-  @apply ltr:border-r rtl:border-l border-black rtl:pl-3 ltr:pr-3;
+  @apply pr-[5px] pl-[5px] pt-[5px] pb-[6px] text-sm text-white;
 }
 
 .image-wrap {

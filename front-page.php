@@ -10,7 +10,7 @@
         <div class="max-w-[900px]">
             <h2 class="section-title mt-4"><?= get_field('about_title') ?></h2>
             <div class="py-8">
-                <h2 class="text-xl uppercase mb-4"><?= get_field('about_subtitle') ?></h2>
+                <h2 class="text-xl mb-4"><?= get_field('about_subtitle') ?></h2>
                 <?= get_field("about_description"); ?>
             </div>
 

@@ -5,13 +5,19 @@ module.exports = {
     container: {
       center: true,
       padding: '15px',
+      screens: {
+        sm: '600px',
+        md: '750px',
+        lg: '970px',
+        xl: '1200px',
+      },
     },
     extend: {
       colors: {
-        primary : '#F42323'
+        primary : '#F90542'
       },
       fontFamily: {
-        english: ['Inter', 'sans-serif'], // Replace with your English font
+        english: ['Work Sans', 'sans-serif'], // Replace with your English font
         arabic: ['Readex Pro', 'serif'],       // Replace with your Arabic font
       },
     },
