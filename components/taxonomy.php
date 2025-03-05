@@ -39,7 +39,6 @@ $posts = $query->posts;
             <h1 class="section-title uppercase">
                 <?= $title; ?>
             </h1>
-            <div class="bg-[#A60023] h-[4px] w-[50px]"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8">
                 <?php foreach ($posts as $post): ?>
                     <?php get_template_part("components/article-card", "", ['post' => $post]); ?>

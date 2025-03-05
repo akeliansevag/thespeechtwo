@@ -17,11 +17,15 @@
 }
 
 body {
-  @apply bg-[#f7f7f7] max-lg:mt-[var(--mobile-header-height)] lg:mt-[var(--header-height)];
+  @apply bg-[#ffffff] max-lg:mt-[var(--mobile-header-height)] lg:mt-[var(--header-height)];
 }
 
 main {
   @apply lg:py-20 max-lg:py-10;
+}
+
+a:hover:not(.menu a):not(#side-menu a):not(.wpml-ls a) {
+  @apply hover:text-primary;
 }
 
 .readex-pro {
@@ -63,9 +67,11 @@ main {
 }
 
 .section-title {
-  @apply capitalize;
-  font-weight: 700;
-  font-size: 24px;
+  @apply capitalize font-bold mb-5 text-3xl;
+}
+
+.section-title::before {
+  @apply content-[''] block w-[45px] h-[10px] bg-primary mb-1;
 }
 
 .overlay {
@@ -331,4 +337,8 @@ a.page-numbers:hover svg path {
 
 .social-media-icons a:hover path {
   @apply fill-primary;
+}
+
+section.section {
+  @apply py-16;
 }
