@@ -9,13 +9,13 @@ $categories = get_the_category($post->ID);
 <?php if ($post) : ?>
     <?php $format = get_post_format($post->ID); ?>
     <article class="flex flex-col relative">
-        <a href="<?= get_permalink($post->ID) ?>" class="block relative aspect-video <?= $format === 'video' ? 'overlay' : '' ?>">
+        <a href="<?= get_permalink($post->ID) ?>" class="overflow-hidden group block relative aspect-video <?= $format === 'video' ? 'overlay' : '' ?>">
             <?php if ($format === 'video'): ?>
                 <div class="absolute w-full h-full z-10 flex items-center justify-center">
                     <?php get_template_part('components/assets/play-button'); ?>
                 </div>
             <?php endif; ?>
-            <?php $thumb_classes = 'absolute w-full h-full object-cover'; ?>
+            <?php $thumb_classes = 'absolute w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-[500ms] ease-in-out'; ?>
             <?php if (has_post_thumbnail($post->ID)): ?>
                 <?= get_the_post_thumbnail($post->ID, 'medium-thumb', ['class' => $thumb_classes]); ?>
             <?php else: ?>
@@ -37,7 +37,7 @@ $categories = get_the_category($post->ID);
                 </h5>
                 <div class="flex gap-2">
                     <?php foreach ($categories as $cat): ?>
-                        <a href="<?= get_category_link($cat->term_id); ?>" class="block hover:opacity-80 uppercase font-bold text-xs bg-black rounded-md text-white py-1 px-2">
+                        <a href="<?= get_category_link($cat->term_id); ?>" class="block hover:opacity-80 hover:!text-white uppercase font-bold text-xs bg-black rounded-md text-white py-1 px-2">
                             <?= $cat->name; ?>
                         </a>
                     <?php endforeach; ?>
