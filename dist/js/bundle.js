@@ -12183,8 +12183,10 @@ if(whoWeAreHandle){
         var scrollHeight = whoWeAreContent.scrollHeight;
 
         if(clientHeight == 0){
+            whoWeAreHandle.classList.add('rotate-[180deg]');
             whoWeAreContent.style.height = scrollHeight + 'px';
         }else{
+            whoWeAreHandle.classList.remove('rotate-[180deg]');
             whoWeAreContent.style.height = 0;
         }
     });

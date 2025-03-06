@@ -25,7 +25,7 @@
 						</div>
 						<div class="flex justify-end max-lg:hidden">
 							<?php
-							wp_nav_menu(['menu' => 'main-menu', 'menu_class' => 'menu text-sm']);
+							wp_nav_menu(['menu' => 'main-menu', 'menu_id' => 'main-menu', 'menu_class' => 'menu text-sm']);
 							?>
 						</div>
 					</div>

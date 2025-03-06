@@ -24,7 +24,9 @@ main {
   @apply lg:py-20 max-lg:py-10;
 }
 
-a:hover:not(.menu a):not(#side-menu a):not(.wpml-ls a) {
+a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
+    #footer-menu a
+  ) {
   @apply hover:text-primary;
 }
 
@@ -59,10 +61,10 @@ a:hover:not(.menu a):not(#side-menu a):not(.wpml-ls a) {
   @apply hover:opacity-90;
 }
 
-.menu {
+#main-menu {
   @apply text-white w-full flex justify-start gap-10;
 }
-.menu > li {
+#main-menu > li {
   @apply relative text-center border-l border-white pt-5 pl-2;
 }
 
@@ -335,10 +337,35 @@ a.page-numbers:hover svg path {
   @apply bg-white max-lg:p-0 lg:pt-10 shadow-md lg:px-10;
 }
 
+.social-media-icons a {
+  @apply h-[40px] w-[40px] rounded-full flex items-center justify-center border border-white;
+}
+
+.social-media-icons a:hover {
+  @apply bg-white;
+}
+
 .social-media-icons a:hover path {
   @apply fill-primary;
 }
 
 section.section {
-  @apply py-16;
+  @apply max-lg:py-7 lg:py-16;
+}
+
+#footer-menu {
+  @apply flex text-white flex-wrap gap-3;
+}
+
+#footer-menu li {
+  @apply border border-y-0 rtl:border-l-0 ltr:border-r-0 ltr:pl-4 rtl:pr-4 ltr:pr-1 rtl:pl-1 leading-none;
+}
+
+#footer-menu li:first-child {
+  @apply ltr:border-l-0 rtl:border-r-0 ltr:pl-0 rtl:pr-0;
+}
+
+#footer-menu li a,
+#main-menu li a {
+  @apply hover:opacity-80 text-nowrap;
 }

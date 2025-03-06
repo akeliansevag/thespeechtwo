@@ -28,6 +28,9 @@
         wp_nav_menu(['menu' => 'main-menu', 'menu_class' => 'mobile-menu font-[600]']);
         ?>
     </div>
+    <div>
+        <?= get_template_part('components/SocialMedia', null, ['color' => '#ffffff']); ?>
+    </div>
 
 
 </div>
