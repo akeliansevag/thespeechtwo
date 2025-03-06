@@ -10,12 +10,13 @@ if(whoWeAreHandle){
         const whoWeAreContent = document.querySelector('#who-we-are-content');
         var clientHeight = whoWeAreContent.clientHeight;
         var scrollHeight = whoWeAreContent.scrollHeight;
+        const whoWeAreArrow = document.querySelector('#who-we-are-arrow');
 
         if(clientHeight == 0){
-            whoWeAreHandle.classList.add('rotate-[180deg]');
+            whoWeAreArrow.classList.add('rotate-[180deg]');
             whoWeAreContent.style.height = scrollHeight + 'px';
         }else{
-            whoWeAreHandle.classList.remove('rotate-[180deg]');
+            whoWeAreArrow.classList.remove('rotate-[180deg]');
             whoWeAreContent.style.height = 0;
         }
     });
