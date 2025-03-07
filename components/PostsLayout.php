@@ -17,7 +17,7 @@ $posts = get_posts($arguments);
     <div>
         <div class="flex justify-between items-center">
             <h2 class="section-title"><?= $category->name; ?></h2>
-            <a class="underline" href="<?= get_category_link($category) ?>">MORE</a>
+            <a class="underline" href="<?= get_category_link($category) ?>"><?= _e('MORE', 'thespeech'); ?></a>
         </div>
 
         <div class="flex max-lg:flex-col max-lg:gap-10 lg:gap-5">
