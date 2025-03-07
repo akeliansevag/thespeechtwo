@@ -40,12 +40,12 @@ $members = $team->posts;
                                 <div class="flex flex-col gap-5">
                                     <?php foreach ($group as $member): ?>
                                         <div class="flex items-center gap-5">
-                                            <div class="w-full">
+                                            <div class="w-3/5">
                                                 <h3 class="text-[#2a7374]"><?= get_field('title', $member->ID) ?></h3>
                                                 <h4 class="text-2xl"><?= $member->post_title ?></h4>
                                                 <h5><?= get_field('degree', $member->ID) ?></h5>
                                             </div>
-                                            <a class="group w-full" href="<?= get_permalink($member) ?>">
+                                            <a class="group w-2/5" href="<?= get_permalink($member) ?>">
                                                 <div class="w-full flex items-center justify-center aspect-video relative overflow-hidden">
                                                     <div class="absolute z-10">
                                                         <?php get_template_part('components/assets/play-button'); ?>
