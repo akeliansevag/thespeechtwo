@@ -1565,61 +1565,55 @@ __webpack_require__.r(__webpack_exports__);
 // Import Swiper styles
 
 
-if(document.getElementById('team-slider')){
-  const team  = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('#team-slider', {
-    loop: true,
+let teamSliderDesktop;
+let teamSliderMobile;
+
+if(document.getElementById('team-slider-desktop')){
+  teamSliderDesktop = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('#team-slider-desktop',{
+    init: false,
     slidesPerView: 1,
-    centeredSlides: false,
-    spaceBetween: 20,
+    spaceBetween: 15,
     grabCursor: true,
     autoplay: true,
-    breakpoints: {
-      1280: {
-          slidesPerView:3,
-          //centeredSlides:true
-      },
-      992: {
-          slidesPerView:2,
-          //centeredSlides:true
-      },
-      768: {
-        slidesPerView:1.5,
-        //centeredSlides:true
-      }
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     },
   });
 }
 
-if(document.getElementById('full-posts-slider')){
-  const fullPostsSlider  = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('#full-posts-slider', {
-    loop: true,
-    slidesPerView: 1.2,
-    spaceBetween: 20,
+if(document.getElementById('team-slider-mobile')){
+  teamSliderMobile = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('#team-slider-mobile',{
+    init: false,
+    slidesPerView: 1.5,
+    spaceBetween: 15,
+    grabCursor: true,
     autoplay: true,
-    breakpoints: {
-      1500: {
-        slidesPerView:5.5,
-       
-      },
-      1280: {
-          slidesPerView:4.5,
-      },
-      992: {
-          slidesPerView:3.5,
-      }
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.thumb-next',
-      prevEl: '.thumb-prev',
-    },
   });
 }
+
+
+function initializeSwiper() {
+  if (window.innerWidth >= 992) {
+    if(teamSliderDesktop){
+      teamSliderDesktop.init();
+    }
+      
+  } else if (window.innerWidth < 992) {
+    if(teamSliderMobile){
+      teamSliderMobile.init();
+    }
+  }
+}
+
+// Initialize Swiper on page load
+initializeSwiper();
+
+// Listen for window resize events
+window.addEventListener('resize', function () {
+  initializeSwiper();
+});
 
 /***/ }),
 

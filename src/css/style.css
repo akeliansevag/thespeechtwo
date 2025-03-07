@@ -385,3 +385,7 @@ section.section {
 #main-menu li a {
   @apply hover:opacity-80 text-nowrap;
 }
+
+.swiper-pagination-bullet-active {
+  @apply !bg-primary;
+}

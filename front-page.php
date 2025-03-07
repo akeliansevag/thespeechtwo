@@ -31,10 +31,10 @@
 <section class="section">
     <div class="container">
         <div class="who-we-are p-5 flex max-lg:flex-col border-dashed border border-x-0 ">
-            <h2 class="text-[#2A7374] max-lg:border-0 text-lg border border-dashed border-y-0 border-l-0 pr-4 text-nowrap mt-[0.8px]">
+            <h2 class="text-[#2A7374] max-lg:border-0 text-lg border border-dashed border-y-0 ltr:border-l-0 rtl:border-r-0 ltr:pr-4 rtl:pl-4 text-nowrap ltr:mt-[0.8px] rtl:mt-1">
                 <?= get_field('about_title') ?>
             </h2>
-            <div class="lg:pl-4">
+            <div class="ltr:lg:pl-4 rtl:lg:pr-4">
                 <div class="flex items-center justify-between cursor-pointer group" id="who-we-are-handle">
                     <h3 class="uppercase font-bold group-hover:text-primary">
                         <?= get_field('about_subtitle'); ?>
@@ -45,7 +45,7 @@
                         </svg>
                     </div>
                 </div>
-                <div id="who-we-are-content" class="pr-10 h-0 overflow-hidden transition-all">
+                <div id="who-we-are-content" class="ltr:pr-10 rtl:pl-10 h-0 overflow-hidden transition-all">
                     <?= get_field('about_description'); ?>
                 </div>
             </div>
@@ -57,6 +57,12 @@
 <section class="section">
     <div class="container">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'warning', 'big' => false, 'posts_per_page' => 5]); ?>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <?= get_template_part('components/TheTeam'); ?>
     </div>
 </section>
 

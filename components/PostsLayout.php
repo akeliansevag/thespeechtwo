@@ -15,7 +15,11 @@ $posts = get_posts($arguments);
 
 <?php if ($posts): ?>
     <div>
-        <h2 class="section-title"><?= $category->name; ?></h2>
+        <div class="flex justify-between items-center">
+            <h2 class="section-title"><?= $category->name; ?></h2>
+            <a class="underline" href="<?= get_category_link($category) ?>">MORE</a>
+        </div>
+
         <div class="flex max-lg:flex-col max-lg:gap-10 lg:gap-5">
             <?php foreach ($posts as $key => $post): ?>
                 <?php
