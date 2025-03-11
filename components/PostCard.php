@@ -5,7 +5,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
 
 <?php if ($post): ?>
     <?php $format = get_post_format($post->ID); ?>
-    <div class="<?= $big ? 'lg:w-2/5' : 'lg:w-1/5' ?> relative">
+    <div class="max-lg:w-2/3 flex-shrink-0 <?= $big ? 'lg:w-2/5' : 'lg:w-1/5' ?> relative">
         <a href="<?= get_permalink($post->ID) ?>" class="group relative flex justify-center overflow-hidden items-center aspect-video w-full bg-gray-200">
             <?php if ($format === 'video'): ?>
                 <div class="absolute z-10">

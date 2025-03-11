@@ -28,6 +28,14 @@ if(document.getElementById('team-slider-mobile')){
     spaceBetween: 15,
     grabCursor: true,
     autoplay: true,
+    breakpoints: {
+      320: {
+        autoplay: false
+      },
+      993: {
+        autoplay: true
+      }
+    }
   });
 }
 

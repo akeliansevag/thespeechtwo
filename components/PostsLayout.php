@@ -20,7 +20,7 @@ $posts = get_posts($arguments);
             <a class="underline" href="<?= get_category_link($category) ?>"><?= _e('MORE', 'thespeech'); ?></a>
         </div>
 
-        <div class="flex max-lg:flex-col max-lg:gap-10 lg:gap-5">
+        <div class="flex w-full max-lg:overflow-x-auto max-lg:gap-4 lg:gap-5 max-lg:pb-5">
             <?php foreach ($posts as $key => $post): ?>
                 <?php
                 $b = ($big && $key === 0) ? true : false;
