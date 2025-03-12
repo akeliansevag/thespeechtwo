@@ -7,7 +7,6 @@ import './fancybox';
 window.addEventListener("load", async () => {
     await document.fonts.ready;
     const whoWeAreHandle = document.querySelector('#who-we-are-handle');
-    console.log(document.querySelector('#who-we-are-content').scrollHeight);
 
     if(whoWeAreHandle){
         toggleAccordion('open');
@@ -28,7 +27,6 @@ window.addEventListener("load", async () => {
         var whoWeAreContent = document.querySelector('#who-we-are-content');
         
         var scrollHeight = whoWeAreContent.scrollHeight;
-        console.log(scrollHeight);
         var whoWeAreArrow = document.querySelector('#who-we-are-arrow');
         if(state=='open'){
             whoWeAreArrow.classList.add('rotate-180');
@@ -42,7 +40,10 @@ window.addEventListener("load", async () => {
 
     window.addEventListener('resize', ()=>{
         var whoWeAreContent = document.querySelector('#who-we-are-content');
-        whoWeAreContent.style.height = 'auto';
+        if(whoWeAreContent){
+            whoWeAreContent.style.height = 'auto';
+        }
+        
     });
 });
 
