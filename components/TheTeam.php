@@ -66,6 +66,7 @@ $members = $team->posts;
                         <?php endforeach; ?>
                     </div>
                 </div>
+
             </div>
 
 
@@ -98,13 +99,15 @@ $members = $team->posts;
                             </div>
                         <?php endforeach; ?>
                     </div>
+
                 </div>
+
             </div>
 
         </div>
 
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination max-lg:hidden !relative mt-7"></div>
+    <div class="swiper-pagination max-lg:hidden !relative pt-8"></div>
 </div>
 <?php wp_reset_postdata(); ?>
