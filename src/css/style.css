@@ -347,10 +347,10 @@ a.page-numbers:hover svg path {
 }
 
 .section-wrapper {
-  @apply bg-white max-lg:p-5 lg:p-10 shadow-md;
+  @apply bg-white max-lg:p-5 lg:p-5 shadow-md;
 }
 .section-wrapper-full {
-  @apply bg-white max-lg:p-0 lg:pt-10 shadow-md lg:px-10;
+  @apply bg-white max-lg:p-0 lg:pt-5 shadow-md lg:px-5;
 }
 
 .social-media-icons a {
