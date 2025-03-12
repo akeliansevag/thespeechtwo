@@ -12,7 +12,7 @@
 }
 
 :root {
-  --header-height: 90px;
+  --header-height: 60px;
   --mobile-header-height: 60px;
   --top-bar-height: 70px;
 }
@@ -366,7 +366,7 @@ a.page-numbers:hover svg path {
 }
 
 section.section {
-  @apply max-lg:py-7 lg:py-16;
+  @apply max-lg:py-7 lg:py-10;
 }
 
 #footer-menu {

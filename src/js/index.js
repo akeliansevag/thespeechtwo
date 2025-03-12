@@ -3,21 +3,46 @@ import './calendar';
 import './swiper';
 import './fancybox';
 
-const whoWeAreHandle = document.querySelector('#who-we-are-handle');
 
-if(whoWeAreHandle){
-    whoWeAreHandle.addEventListener('click', () => {
-        const whoWeAreContent = document.querySelector('#who-we-are-content');
+window.addEventListener("load", async () => {
+    await document.fonts.ready;
+    const whoWeAreHandle = document.querySelector('#who-we-are-handle');
+    console.log(document.querySelector('#who-we-are-content').scrollHeight);
+
+    if(whoWeAreHandle){
+        toggleAccordion('open');
+    }
+
+
+    if(whoWeAreHandle.addEventListener('click',()=>{
+        var whoWeAreContent = document.querySelector('#who-we-are-content');
         var clientHeight = whoWeAreContent.clientHeight;
-        var scrollHeight = whoWeAreContent.scrollHeight;
-        const whoWeAreArrow = document.querySelector('#who-we-are-arrow');
-
-        if(clientHeight == 0){
-            whoWeAreArrow.classList.add('rotate-[180deg]');
-            whoWeAreContent.style.height = scrollHeight + 'px';
+        if(clientHeight==0){
+            toggleAccordion('open');
         }else{
-            whoWeAreArrow.classList.remove('rotate-[180deg]');
+            toggleAccordion('close');
+        }
+    }));
+
+    function toggleAccordion(state){
+        var whoWeAreContent = document.querySelector('#who-we-are-content');
+        
+        var scrollHeight = whoWeAreContent.scrollHeight;
+        console.log(scrollHeight);
+        var whoWeAreArrow = document.querySelector('#who-we-are-arrow');
+        if(state=='open'){
+            whoWeAreArrow.classList.add('rotate-180');
+            whoWeAreContent.style.height = scrollHeight + 'px';
+        }
+        if(state=='close'){
+            whoWeAreArrow.classList.remove('rotate-180');
             whoWeAreContent.style.height = 0;
         }
+    }
+
+    window.addEventListener('resize', ()=>{
+        var whoWeAreContent = document.querySelector('#who-we-are-content');
+        whoWeAreContent.style.height = 'auto';
     });
-}
+});
+

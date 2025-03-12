@@ -22,7 +22,7 @@ $members = $team->posts;
                 </div>
             </a>
             <div class="text-center pt-5">
-                <h3 class="text-[#2a7374]"><?= get_field('title', $members[0]->ID) ?></h3>
+                <h3 class="text-[#83858F]"><?= get_field('title', $members[0]->ID) ?></h3>
                 <a href="<?= get_permalink($members[0]) ?>" class="text-2xl"><?= $members[0]->post_title ?></a>
                 <h5><?= get_field('degree', $members[0]->ID) ?></h5>
             </div>
@@ -41,7 +41,7 @@ $members = $team->posts;
                                     <?php foreach ($group as $member): ?>
                                         <div class="flex items-center gap-5">
                                             <div class="w-3/5">
-                                                <h3 class="text-[#2a7374]"><?= get_field('title', $member->ID) ?></h3>
+                                                <h3 class="text-[#83858F]"><?= get_field('title', $member->ID) ?></h3>
                                                 <h4 class="text-2xl"><?= $member->post_title ?></h4>
                                                 <h5><?= get_field('degree', $member->ID) ?></h5>
                                             </div>
@@ -90,7 +90,7 @@ $members = $team->posts;
                                         </div>
                                     </a>
                                     <div class="w-full">
-                                        <h3 class="text-[#2a7374]"><?= get_field('title', $member->ID) ?></h3>
+                                        <h3 class="text-[#83858F]"><?= get_field('title', $member->ID) ?></h3>
                                         <h4 class="text-2xl"><?= $member->post_title ?></h4>
                                         <h5><?= get_field('degree', $member->ID) ?></h5>
                                     </div>

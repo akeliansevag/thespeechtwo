@@ -31,7 +31,7 @@
 <section class="section">
     <div class="container">
         <div class="who-we-are p-5 flex max-lg:flex-col border-dashed border border-x-0 ">
-            <h2 class="text-[#2A7374] max-lg:border-0 text-lg border border-dashed border-y-0 ltr:border-l-0 rtl:border-r-0 ltr:pr-4 rtl:pl-4 text-nowrap ltr:mt-[0.8px] rtl:mt-1">
+            <h2 class="text-[#83858F] max-lg:border-0 text-lg border border-dashed border-y-0 ltr:border-l-0 rtl:border-r-0 ltr:pr-4 rtl:pl-4 text-nowrap ltr:mt-[0.8px] rtl:mt-1">
                 <?= get_field('about_title') ?>
             </h2>
             <div class="ltr:lg:pl-4 rtl:lg:pr-4">

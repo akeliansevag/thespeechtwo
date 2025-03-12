@@ -5,7 +5,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
 
 <?php if ($post): ?>
     <?php $format = get_post_format($post->ID); ?>
-    <div class="max-lg:w-2/3 flex-shrink-0 <?= $big ? 'lg:w-2/5' : 'lg:w-1/5' ?> relative">
+    <div class="max-lg:w-2/3 max-lg:flex-shrink-0 <?= $big ? 'lg:w-2/5 lg:pb-12' : 'lg:w-1/5' ?> relative">
         <a href="<?= get_permalink($post->ID) ?>" class="group relative flex justify-center overflow-hidden items-center aspect-video w-full bg-gray-200">
             <?php if ($format === 'video'): ?>
                 <div class="absolute z-10">
@@ -29,7 +29,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
             <h3 class="text-xs uppercase text-[#83858F]">
                 <?= get_the_date('F j, Y', $post->ID) ?>
             </h3>
-            <h2 class="<?= $big ? 'max-lg:text-base lg:text-2xl' : 'text-base' ?> line-clamp-3 leading-tight">
+            <h2 class="<?= $big ? 'max-lg:text-base lg:text-2xl' : 'text-base' ?> line-clamp-3 leading-tight font-bold">
                 <a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title; ?></a>
             </h2>
         </div>
