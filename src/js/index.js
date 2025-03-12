@@ -13,15 +13,17 @@ window.addEventListener("load", async () => {
     }
 
 
-    if(whoWeAreHandle.addEventListener('click',()=>{
-        var whoWeAreContent = document.querySelector('#who-we-are-content');
-        var clientHeight = whoWeAreContent.clientHeight;
-        if(clientHeight==0){
-            toggleAccordion('open');
-        }else{
-            toggleAccordion('close');
-        }
-    }));
+    if(whoWeAreHandle){
+        whoWeAreHandle.addEventListener('click',()=>{
+            var whoWeAreContent = document.querySelector('#who-we-are-content');
+            var clientHeight = whoWeAreContent.clientHeight;
+            if(clientHeight==0){
+                toggleAccordion('open');
+            }else{
+                toggleAccordion('close');
+            }
+        })
+    }
 
     function toggleAccordion(state){
         var whoWeAreContent = document.querySelector('#who-we-are-content');
