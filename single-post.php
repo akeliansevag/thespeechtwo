@@ -24,7 +24,7 @@ $posts = $query->posts;
                 <div class="section-wrapper !pt-5">
                     <div class="mb-2">
                         <div class="lg:flex lg:items-center lg:justify-between">
-                            <h1 class="text-4xl"><?= $post->post_title; ?></h1>
+                            <h1 class="text-3xl"><?= $post->post_title; ?></h1>
                             <div class="max-lg:my-2">
                                 <?= get_template_part('components/socialShare'); ?>
                             </div>
