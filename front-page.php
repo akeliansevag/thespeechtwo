@@ -54,11 +54,11 @@
     </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
     <div class="container">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'warning', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
-</section>
+</section> -->
 
 <section class="section">
     <div class="container">
@@ -90,10 +90,10 @@
     </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
     <div class="container">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'follow-your-rights', 'big' => true, 'posts_per_page' => 4]); ?>
     </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>
