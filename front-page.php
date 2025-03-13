@@ -68,31 +68,31 @@
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'protalk', 'big' => false, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'protalk', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'stories', 'big' => false, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'stories', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => false, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'open-mic', 'big' => false, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'open-mic', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
 </section>
 
 <!-- <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'follow-your-rights', 'big' => false, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'follow-your-rights', 'big' => false, 'posts_per_page' => 5]); ?>
     </div>
 </section> -->
 <div class="mb-7"></div>
