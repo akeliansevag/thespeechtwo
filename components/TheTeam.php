@@ -5,7 +5,7 @@ $team = new WP_Query([
 $members = $team->posts;
 ?>
 <div>
-    <h2 class="section-title font-englishTitles"><?= _e("The Team", 'thespeech') ?></h2>
+    <h2 class="section-title ltr:font-englishTitles"><?= _e("The Team", 'thespeech') ?></h2>
     <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="bg-[#f8f8f8] p-5">
             <a class="group" href="<?= get_permalink($members[0]) ?>">
@@ -22,8 +22,8 @@ $members = $team->posts;
                 </div>
             </a>
             <div class="text-center pt-5">
-                <h3 class="text-[#83858F]"><?= get_field('title', $members[0]->ID) ?></h3>
-                <a href="<?= get_permalink($members[0]) ?>" class="text-2xl"><?= $members[0]->post_title ?></a>
+                <h3 class="text-[#83858F] uppercase text-base"><?= get_field('title', $members[0]->ID) ?></h3>
+                <a href="<?= get_permalink($members[0]) ?>" class="max-lg:text-base lg:text-2xl"><?= $members[0]->post_title ?></a>
                 <h5><?= get_field('degree', $members[0]->ID) ?></h5>
             </div>
         </div>
@@ -41,8 +41,8 @@ $members = $team->posts;
                                     <?php foreach ($group as $member): ?>
                                         <div class="flex items-center gap-5">
                                             <div class="w-3/5">
-                                                <h3 class="text-[#83858F]"><?= get_field('title', $member->ID) ?></h3>
-                                                <h4 class="text-2xl"><?= $member->post_title ?></h4>
+                                                <h3 class="text-[#83858F] text-xs uppercase"><?= get_field('title', $member->ID) ?></h3>
+                                                <h4 class="text-base font-bold"><?= $member->post_title ?></h4>
                                                 <h5><?= get_field('degree', $member->ID) ?></h5>
                                             </div>
                                             <a class="group w-2/5" href="<?= get_permalink($member) ?>">
@@ -91,8 +91,8 @@ $members = $team->posts;
                                         </div>
                                     </a>
                                     <div class="w-full">
-                                        <h3 class="text-[#83858F]"><?= get_field('title', $member->ID) ?></h3>
-                                        <h4 class="text-2xl"><?= $member->post_title ?></h4>
+                                        <h3 class="text-[#83858F] text-xs uppercase"><?= get_field('title', $member->ID) ?></h3>
+                                        <h4 class="text-base font-bold"><?= $member->post_title ?></h4>
                                         <h5><?= get_field('degree', $member->ID) ?></h5>
                                     </div>
                                 </div>

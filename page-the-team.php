@@ -20,7 +20,7 @@ $posts = $query->posts;
 <main>
     <section>
         <div class="container">
-            <h1 class="section-title uppercase font-englishTitles">
+            <h1 class="section-title uppercase ltr:font-englishTitles">
                 <?= the_title(); ?>
             </h1>
             <?php if ($posts): ?>

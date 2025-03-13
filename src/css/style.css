@@ -366,7 +366,7 @@ a.page-numbers:hover svg path {
 }
 
 section.section {
-  @apply max-lg:py-7 lg:py-10;
+  @apply max-lg:py-7 lg:py-7;
 }
 
 #footer-menu {
