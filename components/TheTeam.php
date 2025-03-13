@@ -22,8 +22,8 @@ $members = $team->posts;
                 </div>
             </a>
             <div class="text-center pt-5">
-                <h3 class="text-[#83858F] uppercase text-base"><?= get_field('title', $members[0]->ID) ?></h3>
-                <a href="<?= get_permalink($members[0]) ?>" class="max-lg:text-base lg:text-2xl"><?= $members[0]->post_title ?></a>
+                <h3 class="text-[#83858F] uppercase text-xs"><?= get_field('title', $members[0]->ID) ?></h3>
+                <a href="<?= get_permalink($members[0]) ?>" class="max-lg:text-base lg:text-xl ltr:font-englishTitles font-bold"><?= $members[0]->post_title ?></a>
                 <h5><?= get_field('degree', $members[0]->ID) ?></h5>
             </div>
         </div>
@@ -42,7 +42,7 @@ $members = $team->posts;
                                         <div class="flex items-center gap-5">
                                             <div class="w-3/5">
                                                 <h3 class="text-[#83858F] text-xs uppercase"><?= get_field('title', $member->ID) ?></h3>
-                                                <h4 class="text-base font-bold"><?= $member->post_title ?></h4>
+                                                <h4 class="text-base font-bold ltr:font-englishTitles"><?= $member->post_title ?></h4>
                                                 <h5><?= get_field('degree', $member->ID) ?></h5>
                                             </div>
                                             <a class="group w-2/5" href="<?= get_permalink($member) ?>">

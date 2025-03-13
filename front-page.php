@@ -6,15 +6,15 @@
                 <?= get_template_part('components/assets/play-button'); ?>
             </a>
             <img class="-z-10 image-wrap absolute w-full h-full object-cover" src="<?= get_template_directory_uri() ?>/src/img/microphone.webp" alt="The Speech banner">
-            <div class="max-lg:hidden absolute max-lg:max-w-auto max-lg:w-auto  flex flex-col gap-4 ltr:right-0 rtl:left-0 bottom-0 bg-white p-5">
+            <div class="max-lg:hidden absolute max-lg:max-w-auto max-lg:w-auto  flex flex-col gap-1 ltr:right-0 rtl:left-0 bottom-0 bg-white px-5 py-8">
                 <h1 class="ltr:font-englishTitles font-bold  max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
                 <?php if (get_field('banner_subtitle')): ?>
-                    <h2 class="text-xl"><?= get_field("banner_subtitle"); ?></h2>
+                    <h2 class="text-lg"><?= get_field("banner_subtitle"); ?></h2>
                 <?php endif; ?>
             </div>
         </div>
         <div class="lg:hidden max-lg:max-w-auto max-lg:w-auto lg:max-w-[50%] flex flex-col gap-2 ltr:right-0 rtl:left-0 bottom-0 bg-white pt-5">
-            <h1 class="readex-pro max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
+            <h1 class="ltr:font-englishTitles max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
             <?php if (get_field('banner_subtitle')): ?>
                 <h2 class="text-lg"><?= get_field("banner_subtitle"); ?></h2>
             <?php endif; ?>
@@ -60,29 +60,31 @@
     </div>
 </section> -->
 
-<section class="section">
-    <div class="container">
+<div class="container">
+    <section class="section with-separator">
         <?= get_template_part('components/TheTeam'); ?>
-    </div>
-</section>
+    </section>
+</div>
 
-<section class="section">
-    <div class="container">
+
+<div class="container">
+    <section class="section with-separator">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'protalk', 'big' => false, 'posts_per_page' => 5]); ?>
-    </div>
-</section>
+    </section>
+</div>
 
-<section class="section">
-    <div class="container">
+
+<div class="container">
+    <section class="section with-separator">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'stories', 'big' => false, 'posts_per_page' => 5]); ?>
-    </div>
-</section>
+    </section>
+</div>
 
-<section class="section">
-    <div class="container">
+<div class="container">
+    <section class="section with-separator">
         <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => false, 'posts_per_page' => 5]); ?>
-    </div>
-</section>
+    </section>
+</div>
 
 <section class="section">
     <div class="container">

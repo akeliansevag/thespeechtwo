@@ -1,4 +1,4 @@
-<footer class="bg-primary py-16">
+<footer class="bg-black py-10">
     <div class="container">
         <div class="flex gap-5 lg:justify-between max-lg:flex-col lg:items-center">
             <a class="inline-block lg:translate-y-[2px]" href="<?= home_url() ?>">

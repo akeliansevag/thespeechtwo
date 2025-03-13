@@ -369,6 +369,10 @@ section.section {
   @apply max-lg:py-7 lg:py-7;
 }
 
+section.section.with-separator {
+  @apply border-b border-dashed;
+}
+
 #footer-menu {
   @apply flex text-white flex-wrap gap-3;
 }
