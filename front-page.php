@@ -6,8 +6,8 @@
                 <?= get_template_part('components/assets/play-button'); ?>
             </a>
             <img class="-z-10 image-wrap absolute w-full h-full object-cover" src="<?= get_template_directory_uri() ?>/src/img/microphone.webp" alt="The Speech banner">
-            <div class="max-lg:hidden absolute max-lg:max-w-auto max-lg:w-auto lg:max-w-[50%] flex flex-col gap-4 ltr:right-0 rtl:left-0 bottom-0 bg-white p-5">
-                <h1 class="readex-pro max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
+            <div class="max-lg:hidden absolute max-lg:max-w-auto max-lg:w-auto  flex flex-col gap-4 ltr:right-0 rtl:left-0 bottom-0 bg-white p-5">
+                <h1 class="font-englishTitles font-bold  max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
                 <?php if (get_field('banner_subtitle')): ?>
                     <h2 class="text-xl"><?= get_field("banner_subtitle"); ?></h2>
                 <?php endif; ?>
@@ -68,31 +68,31 @@
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'protalk', 'big' => true, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'protalk', 'big' => false, 'posts_per_page' => 4]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'stories', 'big' => true, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'stories', 'big' => false, 'posts_per_page' => 4]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => true, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => false, 'posts_per_page' => 4]); ?>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'open-mic', 'big' => true, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'open-mic', 'big' => false, 'posts_per_page' => 4]); ?>
     </div>
 </section>
 
 <!-- <section class="section">
     <div class="container">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'follow-your-rights', 'big' => true, 'posts_per_page' => 4]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'follow-your-rights', 'big' => false, 'posts_per_page' => 4]); ?>
     </div>
 </section> -->
 

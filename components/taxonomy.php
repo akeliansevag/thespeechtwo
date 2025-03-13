@@ -36,7 +36,7 @@ $posts = $query->posts;
 <main>
     <section>
         <div class="container">
-            <h1 class="section-title uppercase">
+            <h1 class="section-title uppercase font-englishTitles">
                 <?= $title; ?>
             </h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8">

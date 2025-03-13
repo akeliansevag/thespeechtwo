@@ -5,7 +5,7 @@ $team = new WP_Query([
 $members = $team->posts;
 ?>
 <div>
-    <h2 class="section-title"><?= _e("The Team", 'thespeech') ?></h2>
+    <h2 class="section-title font-englishTitles"><?= _e("The Team", 'thespeech') ?></h2>
     <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="bg-[#f8f8f8] p-5">
             <a class="group" href="<?= get_permalink($members[0]) ?>">

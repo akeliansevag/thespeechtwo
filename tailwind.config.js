@@ -18,6 +18,7 @@ module.exports = {
         primary : '#8E030C'
       },
       fontFamily: {
+        englishTitles: ['Spectral', 'serif'],
         english: ['Work Sans', 'sans-serif'], // Replace with your English font
         arabic: ['Readex Pro', 'serif'],       // Replace with your Arabic font
       },
