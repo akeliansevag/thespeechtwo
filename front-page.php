@@ -1,26 +1,5 @@
 <?php get_header(); ?>
-<section class="section">
-    <div class="container mt-7">
-        <div class="flex items-center justify-center relative w-full overflow-hidden aspect-video">
-            <a class="" data-fancybox href="https://youtu.be/4D8S-mNlc8Y">
-                <?= get_template_part('components/assets/play-button'); ?>
-            </a>
-            <img class="-z-10 image-wrap absolute w-full h-full object-cover" src="<?= get_template_directory_uri() ?>/src/img/microphone.webp" alt="The Speech banner">
-            <div class="max-lg:hidden absolute max-lg:max-w-auto max-lg:w-auto  flex flex-col gap-1 ltr:right-0 rtl:left-0 bottom-0 bg-white px-5 py-8">
-                <h1 class="ltr:font-englishTitles font-bold  max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
-                <?php if (get_field('banner_subtitle')): ?>
-                    <h2 class="text-lg"><?= get_field("banner_subtitle"); ?></h2>
-                <?php endif; ?>
-            </div>
-        </div>
-        <div class="lg:hidden max-lg:max-w-auto max-lg:w-auto lg:max-w-[50%] flex flex-col gap-2 ltr:right-0 rtl:left-0 bottom-0 bg-white pt-5">
-            <h1 class="ltr:font-englishTitles max-lg:text-xl lg:text-3xl"><?= get_field("banner_title"); ?></h1>
-            <?php if (get_field('banner_subtitle')): ?>
-                <h2 class="text-lg"><?= get_field("banner_subtitle"); ?></h2>
-            <?php endif; ?>
-        </div>
-    </div>
-</section>
+<?php get_template_part('components/HomeBanner'); ?>
 
 <section class="section">
     <div class="container">
