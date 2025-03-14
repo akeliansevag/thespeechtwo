@@ -36,7 +36,7 @@
             </h2>
             <div class="ltr:lg:pl-4 rtl:lg:pr-4">
                 <div class="flex items-center justify-between cursor-pointer group" id="who-we-are-handle">
-                    <h3 class="uppercase group-hover:text-primary ltr:font-englishTitles font-bold">
+                    <h3 class="group-hover:text-primary ltr:font-englishTitles font-bold">
                         <?= get_field('about_subtitle'); ?>
                     </h3>
                     <div class="hover:opacity-40 cursor-pointer transition-all" id="who-we-are-arrow">
