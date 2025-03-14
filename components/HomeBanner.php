@@ -14,7 +14,7 @@ $sticky = $query->posts;
     <section class="section">
         <div class="container mt-7">
             <div class="flex items-center justify-center relative w-full overflow-hidden aspect-video">
-                <a class="" data-fancybox href="<?= get_field('post_youtube_url', $sticky[0]->ID) ?>">
+                <a class="" data-fancybox href="https://youtu.be/4D8S-mNlc8Y">
                     <?= get_template_part('components/assets/play-button'); ?>
                 </a>
                 <?php $thumb_classes = '-z-10 image-wrap absolute w-full h-full object-cover'; ?>
