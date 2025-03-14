@@ -60,7 +60,7 @@ a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
   background-color: #dedede;
 }
 .hamburger {
-  @apply flex flex-col justify-center items-center gap-[3px] max-lg:h-full max-lg:w-[60px] lg:h-[40px] lg:w-[40px] lg:rounded-full bg-white;
+  @apply flex flex-col justify-center items-center gap-[3px] max-lg:h-full max-lg:w-[60px] lg:h-[40px] lg:w-[40px] lg:rounded-full bg-secondary;
 }
 
 .hamburger:hover {
@@ -68,17 +68,17 @@ a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
 }
 
 .hamburger span {
-  @apply bg-primary;
+  @apply bg-white;
   height: 3px;
   width: 20px;
 }
 
 .hamburger:hover {
-  @apply hover:bg-secondary;
+  @apply hover:bg-white;
 }
 
 .hamburger:hover span {
-  @apply bg-white;
+  @apply bg-secondary;
 }
 
 #main-menu {
