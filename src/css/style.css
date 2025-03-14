@@ -42,7 +42,7 @@ main {
 
 a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
     #footer-menu a
-  ):not(.page-numbers a) {
+  ):not(a.page-numbers) {
   @apply hover:text-secondary;
 }
 
