@@ -43,7 +43,7 @@ main {
 a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
     #footer-menu a
   ) {
-  @apply hover:text-primary;
+  @apply hover:text-secondary;
 }
 
 .readex-pro {
@@ -74,7 +74,11 @@ a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
 }
 
 .hamburger:hover {
-  @apply hover:opacity-90;
+  @apply hover:bg-secondary;
+}
+
+.hamburger:hover span {
+  @apply bg-white;
 }
 
 #main-menu {
