@@ -27,7 +27,6 @@ $posts = $query->posts;
             <h1 class="section-title uppercase">
                 <?= _e("Search results for:", 'thespeech') ?> <?= $q; ?>
             </h1>
-            <div class="bg-[#A60023] h-[4px] w-[50px]"></div>
             <?php if ($posts): ?>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8">
                     <?php foreach ($posts as $post): ?>

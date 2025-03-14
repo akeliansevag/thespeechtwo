@@ -89,7 +89,7 @@ a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
 }
 
 .section-title::before {
-  @apply content-[''] block w-[45px] h-[10px] bg-primary mb-1;
+  @apply content-[''] block w-[45px] h-[10px] bg-secondary mb-1;
 }
 
 .overlay {
