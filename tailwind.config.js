@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       colors: {
         // primary : '#F90542'
-        primary : '#b40039'
+        primary : '#a60023'
       },
       fontFamily: {
         englishTitles: ['Spectral', 'serif'],
