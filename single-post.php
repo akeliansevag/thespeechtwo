@@ -30,7 +30,7 @@ $posts = $query->posts;
                             </div>
                         </div>
 
-                        <h5 class="text-sm  font-bold text-[#83858F] mt-3">
+                        <h5 class="text-sm  text-[#83858F] mt-3">
                             <!-- <?= _e('By', 'thespeech') ?>
                             <a class="text-primary" href="<?= get_author_posts_url($post->post_author) ?>">
                                 <?= get_the_author_meta('display_name', $post->post_author); ?>
