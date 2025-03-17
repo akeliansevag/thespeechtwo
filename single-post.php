@@ -42,7 +42,7 @@ $posts = $query->posts;
 
                     <div class="my-4 flex gap-2">
                         <?php foreach ($categories as $cat): ?>
-                            <a class="hover:opacity-80 uppercase font-bold text-xs bg-black rounded-md text-white py-1 px-2" href="<?= get_category_link($cat->term_id); ?>">
+                            <a class="hover:opacity-80 hover:!text-white uppercase font-bold text-xs bg-secondary rounded-md text-white py-1 px-2" href="<?= get_category_link($cat->term_id); ?>">
                                 <?= $cat->name; ?>
                             </a>
                         <?php endforeach; ?>

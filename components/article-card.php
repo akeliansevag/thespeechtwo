@@ -37,7 +37,7 @@ $categories = get_the_category($post->ID);
                 </h5>
                 <div class="flex gap-2">
                     <?php foreach ($categories as $cat): ?>
-                        <a href="<?= get_category_link($cat->term_id); ?>" class="block hover:opacity-80 hover:!text-white uppercase font-bold text-xs bg-black rounded-md text-white py-1 px-2">
+                        <a href="<?= get_category_link($cat->term_id); ?>" class="block hover:opacity-80 hover:!text-white uppercase font-bold text-xs bg-secondary rounded-md text-white py-1 px-2">
                             <?= $cat->name; ?>
                         </a>
                     <?php endforeach; ?>

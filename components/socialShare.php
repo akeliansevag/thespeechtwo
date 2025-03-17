@@ -1,7 +1,7 @@
 <div>
     <?php $url = get_permalink(); ?>
     <div class="flex gap-2">
-        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-black flex items-center justify-center" title="whatsapp" aria-label="whatsapp" href="https://api.whatsapp.com/send?text=<?= $url ?>" data-action="share/whatsapp/share" target="_blank">
+        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-secondary flex items-center justify-center" title="whatsapp" aria-label="whatsapp" href="https://api.whatsapp.com/send?text=<?= $url ?>" data-action="share/whatsapp/share" target="_blank">
             <svg class="w-[23px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -10,7 +10,7 @@
                 </g>
             </svg>
         </a>
-        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-black flex items-center justify-center" href="http://www.facebook.com/sharer/sharer.php?u=<?= $url ?>" title="facebook" target="_blank" aria-label="facebook">
+        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-secondary flex items-center justify-center" href="http://www.facebook.com/sharer/sharer.php?u=<?= $url ?>" title="facebook" target="_blank" aria-label="facebook">
             <svg class="w-[25px]" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -19,7 +19,7 @@
                 </g>
             </svg>
         </a>
-        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-black flex items-center justify-center" href="https://x.com/intent/tweet?url=<?= $url ?>" title="twitter" target="_blank" aria-label="twitter">
+        <a class="hover:opacity-80 w-[35px] h-[35px] rounded-md bg-secondary flex items-center justify-center" href="https://x.com/intent/tweet?url=<?= $url ?>" title="twitter" target="_blank" aria-label="twitter">
             <svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="20px" height="20px">
                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                     <g transform="scale(5.12,5.12)">
