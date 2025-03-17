@@ -29,7 +29,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
             <h3 class="text-xs uppercase text-[#83858F]">
                 <?= get_the_date('M j, Y', $post->ID) ?>
             </h3>
-            <h2 class="<?= $big ? 'max-lg:text-base lg:text-2xl' : 'text-base' ?> line-clamp-2 leading-tight font-bold ltr:font-englishTitles rtl:pb-[5px]">
+            <h2 class="<?= $big ? 'max-lg:text-base lg:text-2xl' : 'text-base' ?> line-clamp-2 leading-tight font-bold ltr:font-englishTitles rtl:pb-[3px]">
                 <a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title; ?></a>
             </h2>
         </div>
