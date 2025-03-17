@@ -17,7 +17,7 @@ $posts = $args['posts'];
                     </a>
                 </div>
                 <div class="w-3/4">
-                    <h4 class="font-bold text-sm line-clamp-2 leading-4 mt-1 ltr:font-englishTitles"><a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title ?></a></h4>
+                    <h4 class="font-bold text-sm line-clamp-2 leading-4 rtl:pb-[3px] mt-1 ltr:font-englishTitles"><a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title ?></a></h4>
                     <h5 class=" text-xs text-[#83858F] font-bold">
                         <!-- <?= _e('By', 'thespeech') ?> <a class="text-primary" href="<?= get_author_posts_url($post->post_author) ?>"><?= get_the_author_meta('display_name', $post->post_author); ?></a> -  -->
 
