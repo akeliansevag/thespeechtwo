@@ -20,7 +20,7 @@
 		<header class="transition-all fixed top-0 z-20 w-full">
 			<div id="top-bar" class="max-lg:hidden transition-all max-lg:h-[var(--mobile-header-height)] lg:h-[var(--top-bar-height)] bg-primary w-full ">
 				<div class="lg:container max-lg:ltr:pl-[15px] max-lg:rtl:pr-[15px] h-full">
-					<div class="max-lg:h-0 overflow-hidden flex justify-between transition-all">
+					<div class="max-lg:h-0 flex justify-between transition-all">
 						<div class="">
 							<!-- <?= do_shortcode('[wpml_language_selector_widget]'); ?> -->
 						</div>
