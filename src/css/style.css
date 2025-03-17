@@ -270,7 +270,7 @@ body.open #side-menu-overlay {
 }
 
 .mobile-menu li a {
-  @apply text-white text-3xl font-light hover:opacity-70;
+  @apply text-white text-2xl font-light hover:opacity-70;
 }
 
 .page-numbers {
