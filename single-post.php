@@ -24,19 +24,19 @@ $posts = $query->posts;
                 <div class="section-wrapper !pt-5">
                     <div class="mb-2">
                         <div class="lg:flex lg:items-center lg:justify-between">
-                            <h1 class="text-3xl"><?= $post->post_title; ?></h1>
+                            <h1 class="text-3xl ltr:font-englishTitles font-bold"><?= $post->post_title; ?></h1>
                             <div class="max-lg:my-2">
                                 <?= get_template_part('components/socialShare'); ?>
                             </div>
                         </div>
 
-                        <h5 class="text-sm uppercase font-bold text-[#83858F] mt-3">
+                        <h5 class="text-sm  font-bold text-[#83858F] mt-3">
                             <!-- <?= _e('By', 'thespeech') ?>
                             <a class="text-primary" href="<?= get_author_posts_url($post->post_author) ?>">
                                 <?= get_the_author_meta('display_name', $post->post_author); ?>
                             </a>
                             -  -->
-                            <?= get_the_date('F j, Y', $post->ID) ?>
+                            <?= get_the_date('M j, Y', $post->ID) ?>
                         </h5>
                     </div>
 

@@ -26,7 +26,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
         }
         ?>
         <div class="<?= $metaClasses ?>">
-            <h3 class="text-xs uppercase text-[#83858F]">
+            <h3 class="text-xs  text-[#83858F]">
                 <?= get_the_date('M j, Y', $post->ID) ?>
             </h3>
             <h2 class="<?= $big ? 'max-lg:text-base lg:text-2xl' : 'text-base' ?> line-clamp-2 leading-tight font-bold ltr:font-englishTitles rtl:pb-[3px]">
