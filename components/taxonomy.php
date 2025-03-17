@@ -53,8 +53,8 @@ $posts = $query->posts;
                     'format' => '/page/%#%',
                     'current' => $paged,
                     'total' => $query->max_num_pages,
-                    'next_text' => '<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 12.7407L7 6.74072L1 0.740723" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-                    'prev_text' => '<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 12.7407L1 6.74072L7 0.740723" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>'
+                    'next_text' => '<svg class="rtl:rotate-180" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 12.7407L7 6.74072L1 0.740723" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+                    'prev_text' => '<svg class="rtl:rotate-180" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 12.7407L1 6.74072L7 0.740723" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>'
                 ));
                 ?>
             </nav>
