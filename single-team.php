@@ -23,7 +23,7 @@ $posts = $query->posts;
                     <div class="py-6">
                         <div class="mb-2">
                             <div class="lg:flex lg:items-center lg:justify-between">
-                                <h1 class="text-3xl"><?= $member->post_title; ?></h1>
+                                <h1 class="text-2xl ltr:font-englishTitles font-bold"><?= $member->post_title; ?></h1>
                                 <div class="max-lg:my-2">
                                     <?= get_template_part('components/socialShare'); ?>
                                 </div>

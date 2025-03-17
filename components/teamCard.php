@@ -21,7 +21,7 @@ if ($args['post']) {
             <?php endif; ?>
         </a>
         <div class="flex-1 bg-white shadow-md p-3 border border-[#d9d9d9] border-t-0">
-            <h2 class="line-clamp-1 text-lg font-bold uppercase"><a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title; ?></a></h2>
+            <h2 class="line-clamp-1 text-lg font-bold ltr:font-englishTitles"><a href="<?= get_permalink($post->ID) ?>"><?= $post->post_title; ?></a></h2>
             <hr class="my-3" />
             <h5 class="text-sm opacity-50"><?= get_field('title', $post->ID) ?></h5>
         </div>

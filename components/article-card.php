@@ -28,12 +28,12 @@ $categories = get_the_category($post->ID);
             <!-- <p class=" line-clamp-1 text-[#707778]"><?= get_the_excerpt($post->ID); ?></p> -->
             <hr class="my-3" />
             <div class="flex items-center justify-between flex-wrap gap-2">
-                <h5 class="text-sm uppercase font-bold text-[#83858F]">
+                <h5 class="text-sm uppercase text-[#83858F]">
                     <!--  <?= _e('By', 'thespeech') ?>
                     <a class="text-primary" href="<?= get_author_posts_url($post->post_author) ?>">
                         <?= get_the_author_meta('display_name', $post->post_author); ?>
                     </a>  - -->
-                    <?= get_the_date('F j, Y', $post->ID) ?>
+                    <?= get_the_date('M j, Y', $post->ID) ?>
                 </h5>
                 <div class="flex gap-2">
                     <?php foreach ($categories as $cat): ?>
