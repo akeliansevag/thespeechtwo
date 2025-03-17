@@ -28,7 +28,7 @@ $categories = get_the_category($post->ID);
             <!-- <p class=" line-clamp-1 text-[#707778]"><?= get_the_excerpt($post->ID); ?></p> -->
             <hr class="my-3" />
             <div class="flex items-center justify-between flex-wrap gap-2">
-                <h5 class="text-sm uppercase text-[#83858F]">
+                <h5 class="text-sm text-[#83858F]">
                     <!--  <?= _e('By', 'thespeech') ?>
                     <a class="text-primary" href="<?= get_author_posts_url($post->post_author) ?>">
                         <?= get_the_author_meta('display_name', $post->post_author); ?>
