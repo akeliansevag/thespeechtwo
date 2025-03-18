@@ -23,14 +23,17 @@
 
         </form>
     </div>
-    <div>
-        <?php
-        wp_nav_menu(['menu' => 'main-menu', 'menu_class' => 'mobile-menu font-[600]']);
-        ?>
+    <div class="flex flex-col justify-between h-full">
+        <div>
+            <?php
+            wp_nav_menu(['menu' => 'main-menu', 'menu_class' => 'mobile-menu font-[600]']);
+            ?>
+        </div>
+        <div class="pt-10">
+            <?= get_template_part('components/SocialMedia', null, ['color' => '#ffffff']); ?>
+        </div>
     </div>
-    <div>
-        <?= get_template_part('components/SocialMedia', null, ['color' => '#ffffff']); ?>
-    </div>
+
 
 
 </div>

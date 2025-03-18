@@ -82,10 +82,18 @@ a:hover:not(#main-menu a):not(#side-menu a):not(.wpml-ls a):not(
 }
 
 #main-menu {
-  @apply text-white w-full flex justify-start gap-10;
+  @apply text-white w-full flex justify-start;
 }
 #main-menu > li {
-  @apply relative text-center border-l border-white pt-5 pl-2;
+  @apply relative text-center border-l border-white pt-5 pl-2 pr-8 pb-1;
+}
+
+#main-menu li.current-menu-item {
+  @apply bg-white text-black;
+}
+
+#main-menu li.current-menu-item a:hover {
+  @apply opacity-100;
 }
 
 .section-title {
@@ -261,16 +269,16 @@ body.open #side-menu-overlay {
 }
 
 .mobile-menu {
-  @apply border-t-2 border-white;
+  @apply border-t-[1px] border-white/50 border-dashed;
 }
 
 .mobile-menu li {
-  border-bottom: 1px solid white;
-  padding: 10px 20px;
+  @apply pt-[10px] pb-[10px];
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 .mobile-menu li a {
-  @apply text-white text-2xl font-light hover:opacity-70;
+  @apply text-white text-xl font-light hover:opacity-70;
 }
 
 .page-numbers {
