@@ -24,7 +24,7 @@ $posts = $query->posts;
 <main>
     <section>
         <div class="container">
-            <h1 class="section-title uppercase">
+            <h1 class="section-title ltr:font-englishTitles uppercase">
                 <?= _e("Search results for:", 'thespeech') ?> <?= $q; ?>
             </h1>
             <?php if ($posts): ?>
