@@ -2,6 +2,7 @@
 $category_name = isset($args['category_name']) ? $args['category_name'] : 'protalk';
 $category = get_category_by_slug($category_name); // Replace 'protalk' with your category slug.
 $posts_per_page = isset($args['posts_per_page']) ? $args['posts_per_page'] : 5;
+$portrait = (isset($args['portrait']) && $args['portrait']) ? true : false;
 
 $arguments = array(
     'category_name' => $category_name, // Category slug
@@ -25,7 +26,7 @@ $posts = get_posts($arguments);
                 <?php
                 $b = ($big && $key === 0) ? true : false;
                 ?>
-                <?= get_template_part("components/PostCard", null, ['post' => $post, 'big' => $b]) ?>
+                <?= get_template_part("components/PostCard", null, ['portrait' => $portrait, 'post' => $post, 'big' => $b]) ?>
             <?php endforeach; ?>
         </div>
     </div>

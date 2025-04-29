@@ -27,6 +27,8 @@ function thespeech_setup()
 
 	add_image_size('medium-thumb', 700, 394, true);
 
+	add_image_size('medium-thumb-portrait', 394, 700, true);
+
 	add_image_size('small-thumb', 400, 225, true);
 
 	add_theme_support(

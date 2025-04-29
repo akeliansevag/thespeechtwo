@@ -61,7 +61,7 @@
 
 <div class="container">
     <section class="section with-separator">
-        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'fyi', 'big' => false, 'posts_per_page' => 5]); ?>
+        <?= get_template_part("components/PostsLayout", null, ['portrait' => true, 'category_name' => 'fyi', 'big' => false, 'posts_per_page' => 5]); ?>
     </section>
 </div>
 

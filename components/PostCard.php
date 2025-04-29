@@ -1,12 +1,16 @@
 <?php
 $post = $args['post'] ? $args['post'] : null;
 $big = (isset($args['big']) && $args['big']) ? true : false;
+$portrait = (isset($args['portrait']) && $args['portrait']) ? true : false;
 ?>
 
 <?php if ($post): ?>
     <?php $format = get_post_format($post->ID); ?>
     <div class="max-lg:w-2/3 max-lg:flex-shrink-0 <?= $big ? 'lg:w-2/5 lg:pb-12' : 'lg:w-1/5' ?> relative">
-        <a href="<?= get_permalink($post->ID) ?>" class="group relative flex justify-center overflow-hidden items-center aspect-video w-full bg-gray-200">
+        <?php
+        $aspect = $portrait ? 'aspect-[9/16]' : 'aspect-video'
+        ?>
+        <a href="<?= get_permalink($post->ID) ?>" class="group relative flex justify-center overflow-hidden items-center <?= $aspect ?> w-full bg-gray-200">
             <?php if ($format === 'video'): ?>
                 <div class="absolute z-10">
                     <?= get_template_part("components/assets/play-button"); ?>
@@ -14,7 +18,7 @@ $big = (isset($args['big']) && $args['big']) ? true : false;
             <?php endif; ?>
             <?php $thumb_classes = 'absolute w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-[500ms] ease-in-out'; ?>
             <?php if (has_post_thumbnail($post->ID)): ?>
-                <?= get_the_post_thumbnail($post->ID, 'medium-thumb', ['class' => $thumb_classes]); ?>
+                <?= get_the_post_thumbnail($post->ID, $portrait ? 'medium-thumb-portrait' : 'medium-thumb', ['class' => $thumb_classes]); ?>
             <?php else: ?>
                 <img src="<?= get_template_directory_uri() ?>/src/img/placeholder.webp" alt="Image Placeholder" class="<?= $thumb_classes ?>">
             <?php endif; ?>
