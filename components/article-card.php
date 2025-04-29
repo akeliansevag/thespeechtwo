@@ -3,13 +3,18 @@ $post = "";
 if ($args['post']) {
     $post = $args['post'];
 }
+
+$portrait = (isset($args['portrait']) && $args['portrait']) ? true : false;
 $categories = get_the_category($post->ID);
 ?>
 
 <?php if ($post) : ?>
     <?php $format = get_post_format($post->ID); ?>
     <article class="flex flex-col relative">
-        <a href="<?= get_permalink($post->ID) ?>" class="overflow-hidden group block relative aspect-video <?= $format === 'video' ? 'overlay' : '' ?>">
+        <?php
+        $aspect = $portrait ? 'aspect-[9/16]' : 'aspect-video'
+        ?>
+        <a href="<?= get_permalink($post->ID) ?>" class="overflow-hidden group block relative <?= $aspect ?> <?= $format === 'video' ? 'overlay' : '' ?>">
             <?php if ($format === 'video'): ?>
                 <div class="absolute w-full h-full z-10 flex items-center justify-center">
                     <?php get_template_part('components/assets/play-button'); ?>
@@ -17,7 +22,7 @@ $categories = get_the_category($post->ID);
             <?php endif; ?>
             <?php $thumb_classes = 'absolute w-full h-full object-cover group-hover:scale-[1.2] transition-transform duration-[500ms] ease-in-out'; ?>
             <?php if (has_post_thumbnail($post->ID)): ?>
-                <?= get_the_post_thumbnail($post->ID, 'medium-thumb', ['class' => $thumb_classes]); ?>
+                <?= get_the_post_thumbnail($post->ID, $portrait ? 'medium-thumb-portrait' : 'medium-thumb', ['class' => $thumb_classes]); ?>
             <?php else: ?>
                 <img src="<?= get_template_directory_uri() ?>/src/img/placeholder.webp" alt="Image Placeholder" class="<?= $thumb_classes ?>">
             <?php endif; ?>

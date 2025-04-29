@@ -32,6 +32,11 @@ if (isset($author) && !empty($author)) {
 }
 $query = new WP_Query($args);
 $posts = $query->posts;
+
+$portrait = false;
+if ($taxonomy && $taxonomy->slug == 'fyi') {
+    $portrait = true;
+}
 ?>
 <main>
     <section>
@@ -39,9 +44,9 @@ $posts = $query->posts;
             <h1 class="section-title uppercase ltr:font-englishTitles">
                 <?= $title; ?>
             </h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 py-8">
                 <?php foreach ($posts as $post): ?>
-                    <?php get_template_part("components/article-card", "", ['post' => $post]); ?>
+                    <?php get_template_part("components/article-card", "", ['portrait' => $portrait, 'post' => $post]); ?>
                 <?php endforeach; ?>
             </div>
             <nav class="pagination text-center my-10">
