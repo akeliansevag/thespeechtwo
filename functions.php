@@ -58,7 +58,7 @@ function thespeech_scripts()
 
 	// Enqueue styles and scripts with dynamic versions
 	wp_enqueue_style('thespeech-style', $css_file, array(), $css_version);
-	wp_enqueue_script_module('thespeech-scripts', $js_file, array(), $js_version, true);
+	wp_enqueue_script('thespeech-scripts', $js_file, array(), $js_version, true);
 
 
 
