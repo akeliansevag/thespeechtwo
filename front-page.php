@@ -52,6 +52,12 @@
     </section>
 </div>
 
+<div class="container">
+    <section class="section with-separator">
+        <?= get_template_part("components/PostsLayout", null, ['category_name' => 'podcast', 'big' => false, 'posts_per_page' => 5]); ?>
+    </section>
+</div>
+
 
 <div class="container">
     <section class="section with-separator">
